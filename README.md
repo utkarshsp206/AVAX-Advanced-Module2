@@ -33,6 +33,27 @@ After cloning the github, you will want to do the following to get the code runn
 8. Interact with your own HyperChain!
 9. To close your Local Avalanche Network run killall avalanche-network-runner
 
+## Changes in consts.go
+
+```
+const (
+	// TODO: choose a human-readable part for your hyperchain
+	HRP = "ups"
+	// TODO: choose a name for your hyperchain
+	Name = "UTtoken"
+	// TODO: choose a token symbol
+	Symbol = "UTK"
+)
+```
+
+## Changes in registry.go
+
+```
+    // TODO: register action: actions.CreateAsset
+		// TODO: register action: actions.MintAsset
+		consts.ActionRegistry.Register(&actions.BurnAsset{}, actions.UnmarshalBurnAsset, false),
+		consts.ActionRegistry.Register(&actions.ModifyAsset{}, actions.UnmarshalModifyAsset, false),
+```
 
 ## Authors
 Utkarsh Singh
