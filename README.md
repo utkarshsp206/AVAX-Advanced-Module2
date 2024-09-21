@@ -26,10 +26,10 @@ After cloning the github, you will want to do the following to get the code runn
     Go to consts/consts.go and add the missing parts.
 3. Register the Create_Asset and Mint_Assest actions in registry/registry.go
 4. Run your VM locally
-4. Make sure Go is on your path, defined on your terminal, if not you can do so by running '''export PATH=$PATH:$(go env GOPATH)/bin'''
-5. Run '''MODE="run-single" ./scripts/run.sh'''
-6. Run '''./scripts/build.sh'''
-7. Load the demo private key included on the project '''./build/token-cli key import demo.pk''' and '''./build/token-cli chain import-anr'''
+4. Make sure Go is on your path, defined on your terminal, if not you can do so by running ```export PATH=$PATH:$(go env GOPATH)/bin```
+5. Run ```MODE="run-single" ./scripts/run.sh```
+6. Run ```./scripts/build.sh```
+7. Load the demo private key included on the project ```./build/token-cli key import demo.pk``` and ```./build/token-cli chain import-anr```
 8. Interact with your own HyperChain!
 9. To close your Local Avalanche Network run killall avalanche-network-runner
 
